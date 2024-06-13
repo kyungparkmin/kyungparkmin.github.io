@@ -195,7 +195,7 @@
 
 document.addEventListener("DOMContentLoaded", async () => {
   const userAgent = navigator.userAgent;
-  await axios.post('https://himypage.site', { user_agent: userAgent })
+  await axios.post('https://himypage.site/port', { user_agent: userAgent })
     .then(response => {
 
     })
