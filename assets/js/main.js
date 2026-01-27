@@ -4,6 +4,18 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const userAgent = navigator.userAgent;
+  await axios.post('https://himypage.site/port', { user_agent: userAgent })
+    .then(response => {
+      
+    })
+    .catch(err => {
+      
+    })
+})
+
 !(function($) {
   "use strict";
 
@@ -191,3 +203,5 @@
   });
 
 })(jQuery);
+
+
